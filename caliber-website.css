@@ -1,0 +1,581 @@
+/*
+Caliber Green #63CC00  alt green : #39CD28;  #00D630
+Caliber lighter blue #216988
+Caliber Darker blue #0E2C3A
+
+Light Grey #DCE0E1
+Dark Grey #B1B1B1
+
+*/
+
+/* Global css */
+
+body {
+	font-family: "lucida grande";
+	margin: 0 auto;
+}
+
+.website-wrapper, .wrapper, {
+	width: 100%;
+	overflow: hidden;
+}
+
+.background-image-overlay, .background-text-overlay, .content-columns-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.background-image {
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+}
+
+.background-image-overlay {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+.content-column {
+	width: 85%;
+	margin: 10px auto;
+	padding: 5%;
+}
+
+.content-column-header, .content-column-paragraph, .top-header {
+	width: 100%;
+}
+
+.content-column-header, .top-header {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.content-column-header {
+	margin: 2px auto 0 auto;
+	font-size: 20px;
+	line-height: 28px; /* 1.4x */
+	color: #555;
+}
+
+.header-underline {
+	border: 0;
+	height: 2px;
+	background-color: #39CD28;
+}
+
+.content-column-paragraph {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 24px; /* 1.5x */
+	color: #555;
+}
+
+.top-header {
+ 	height: 35px;
+ 	margin: 0 auto;
+ 	padding-bottom: 2px;
+	font-size: 16px;
+ 	color: white;
+	background-color: #39CD28;
+} 
+
+/* -------------------------------   START OF HOME PAGE   --------------------------------*/
+
+/* Website */
+
+.website-fixed-menu-bar {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	background-color: #39CD28;
+}
+
+.dropdown-menu-icon {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 2%;
+	background-image: url('http://stepupdate.com/assets/svg/icon-hamburger.svg');
+	background-size: cover;
+}
+
+.fixed-menu-header-container {
+	height: 100%;
+	width: 70%;
+	margin: -60px auto 0 auto;
+}
+
+.fixed-menu-header {
+	height: 70%;
+	width: 100%;
+	margin-top: 0;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 15px;
+	padding-left: 16px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.sliding-website-navigation {
+	position: absolute;
+	display: none;
+	height: 225px;
+	width: 200px;
+	top: 60px;
+	background-color: white;
+	z-index: 999;
+}
+
+.nav-button {
+	height: 30px;
+	width: 185px;
+	margin-top: 10px;
+	margin-left: -34px;
+	padding-top: 8px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	list-style: none;
+	color: #555;
+}
+
+/* Homepage content */
+
+.homepage.background-image {
+	background-image: url("http://www.overheadjumprope.nl/eng/wp-content/uploads/bg_NmIT8K3kS4ZeI1eZ.jpg");
+	background-position: 60% 0%;
+}
+
+.homepage.background-text-overlay {
+	margin: 80px auto 0 auto;
+}
+
+.caliber, .strength-and-conditioning, .moto {
+	text-align: center;
+	letter-spacing: 0.1em
+}
+
+.caliber {
+	height: 60px;
+	width: 275px;
+	margin: 25px auto;
+	padding-top: 16px;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: .2em;
+	background-color: #39CD28;
+}
+
+.strength-and-conditioning {
+	height: 30px;
+	width: 275px;
+	margin: 0px auto;
+	padding-top: 12px;
+	font-size: 15px;
+	color: #555;
+	background-color: white;
+}
+
+.moto {
+	height: 25px;
+	width: 315px;
+	margin: 20px auto 0 auto;
+	font-size: 14px; 
+	color: white;
+}
+
+.homepage.content-columns-container {
+	background-color: #EFF2F3;
+}
+
+.homepage.content-column {
+	background-color: white; 
+}
+
+/* -------------------------------START OF Training packages PAGE--------------------------------*/
+
+ .training-packages {
+ 	margin-top: 0px;
+ 	padding-top: 10px;
+ }
+
+.packages.background-image {
+	background-image: url("http://www.splendidwallpaper.com/wp-content/uploads/messi_bicycle_kick_wallpaper_hd-1280x768.jpg");
+	background-position: 40% 0%;
+}
+
+.packages.background-text-overlay {
+	margin: 10px auto 0 auto;
+}
+
+.evolve {
+	width: 275px;
+	margin: 40px auto;
+	padding: 5%;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+
+.packages.offered-services {
+	color: #555;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.packages.content-columns-container {
+	background-color: #EFF2F3
+}
+
+.packages.content-column {
+	background-color: white;
+}
+
+/* -------------------------------START OF ABOUT PAGE--------------------------------*/
+
+.meet-the-trainer {
+	margin: 0px auto;
+ 	padding-top: 10px;
+}
+
+.about.top-section-wrapper, .about.bottom-section-wrapper, .qualifications-panel-wrapper {
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	overflow: hidden;
+ 	background-color: #EFF2F3;
+ }
+
+  /* Bio image and content */
+
+.bio.background-image {
+	width: 275px;
+	height: 275px;
+	margin: 10px auto;
+	background-image: url("http://www.leanitup.com/wp-content/uploads/2014/08/HEALTHY-YOUNG-GUY-DOING-PUSH-UP.jpg");
+	background-size: cover;
+	background-position: 40% 0%;
+	overflow: hidden;
+}
+
+.bio.background-image-overlay {
+	margin: 230px auto 0 auto;
+	height: 45px;
+	background-color: rgba(0,0,0,0.90);	
+}
+
+.bio.trainer-name {
+	margin: 12px auto 0 auto;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	color: white;
+	text-align: center;
+}
+
+/* Education/Cert Panels */
+
+.certifications-header, .education-header {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 3%;
+	font-size: 18px;
+	text-align: center;
+}
+
+.certifications-column, .education-column {
+	height: 180px;
+	width: 85%;
+	margin: 10px auto;
+	padding: 5%;
+	font-size: 14px;
+	line-height: 24px;
+	color: white;
+	background-color: #555;
+}
+
+.education-column {
+	text-align: center;
+}
+
+/* about me + vision panels */
+
+.about-me-column, .vision-column {
+	width: 85%;
+	margin: 10px auto;
+	padding: 5%;
+	background-color: #555;
+}
+
+.about-me-header, .my-vision-header {
+	height: 30px;
+	width: 100%;
+	margin: 2px auto 0 auto;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.vision-paragraph, .about-me-paragraph {
+	width: 90%;
+	margin: 0 auto;
+	padding: 5%;
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+}
+
+
+/* -------------------------------START OF Contact PAGE--------------------------------*/
+
+.contact-me {
+	margin: 0 auto;
+ 	padding-top: 10px;
+ 	font-size: 18px;
+}
+
+.contact.background-image {
+	background-image: url('http://dailysocialsmedia.com/wp-content/uploads/2014/11/athlete-girl.jpg');
+	background-position: 30% 0%;
+}
+
+
+
+/* ------------------------------- Media Queries (over 320px) --------------------------------*/
+
+	@media (min-width: 460px) {
+
+		.homepage.background-image, .packages.background-image {
+			height: 450px;
+		}
+
+		.homepage.content-column-header, .packages.content-column-header {
+			font-size: 22px;
+		}
+
+		.certifications-column, .education-column {
+			display: inline-block;
+			vertical-align: top;
+			width: 35%;
+			margin-left: 3%;
+			height: 200px;
+		}
+
+	} /* End of @media (min-width: 460px) */
+
+
+		@media (min-width: 570px) {
+
+			.homepage.background-image, .packages.background-image {
+				height: 475px;
+			}
+
+			.homepage.content-column, .packages.content-column {
+				padding: 4% 5% 5% 5%;
+				width: 428px;
+			}
+
+		} /* End of @media (min-width: 651px) */
+
+			@media (min-width: 680px) {
+
+				.homepage.background-image, .packages.background-image {
+					height: 500px;
+				}
+
+				.homepage.content-column-header, .packages.content-column-header {
+					font-size: 24px;
+				}
+
+				.homepage.content-column, .packages.content-column {
+					padding-top: 3.5%;
+				}
+
+	 			.about.bottom-section-wrapper {
+				 	display: inline-block;
+					vertical-align: top;
+					height: 850px;
+				 	width: 50%;
+				 	float: left;
+				 }
+
+				 .about-me-panel-wrapper {
+				 	height: 326px;
+				 	width: 95%;
+				 	margin: 25px auto 0 auto;
+				 }
+
+				 .vision-panel-wrapper {
+				 	height: 400px;
+				 	width: 95%;
+				 	margin-top: 0px;
+				 }
+
+				 .about-me-header, .my-vision-header {
+					width: 100%;
+				}
+
+				 .about.top-section-wrapper {
+					display: inline-block;
+					vertical-align: top;
+					height: 850px;
+				 	width: 50%;
+				 	float: right;
+				 }
+
+				 .bio.background-image {
+				 	height: 305px;
+				 	width: 90%;
+	    			margin: 25px auto;
+				 }
+
+				 .bio.background-image-overlay {
+				 	margin: 260px auto 0 auto;
+				 }
+
+				  .qualifications-panel-wrapper {
+				 	width: 325px;
+				 	margin: 5px auto;
+				 }
+
+				 .certifications-column, .education-column {
+				 	height: 180px;
+				 	width: 300px;
+				 	margin: 5px auto;
+				 }
+
+			} /* End of @media (min-width: 680px) */
+
+				@media (min-width: 900px) {
+
+				}
+
+
+					@media (min-width: 1200px) {
+						.homepage.background-image, .packages.background-image {
+							height: 500px;
+						}
+
+						.homepage.content-column-header, .packages.content-column-header {
+							font-size: 24px;
+						}
+
+						.homepage.content-column, .packages.content-column {
+							padding-top: 3.5%;
+						}
+
+			 			.about.bottom-section-wrapper {
+						 	display: inline-block;
+							vertical-align: top;
+							height: 850px;
+						 	width: 50%;
+						 	float: left;
+						 }
+
+						 .about-me-panel-wrapper {
+						 	height: 326px;
+						 	width: 80%;
+						 	margin: 25px auto 0 auto;
+						 }
+
+						 .vision-panel-wrapper {
+						 	height: 400px;
+						 	width: 80%;
+						 	margin-top: 0px;
+						 }
+
+						 .about-me-header, .my-vision-header {
+							width: 100%;
+						}
+
+						 .about.top-section-wrapper {
+							display: inline-block;
+							vertical-align: top;
+							height: 850px;
+						 	width: 50%;
+						 	float: right;
+						 }
+
+						 .bio.background-image {
+						 	width: 80%;
+						 	height: 320px;
+			    			margin: 25px auto;
+						 }
+
+						 .bio.background-image-overlay {
+						 	margin: 260px auto 0 auto;
+						 }
+
+						  .qualifications-panel-wrapper {
+						 	width: 80%;
+						 	margin: 5px auto;
+						 }
+
+						 .certifications-column {
+						 	height: 220px;
+						 	width: 220px;
+						 	margin: 5px auto;
+						 	float: left;
+						 }
+
+
+						 .education-column {
+						 	height: 220px;
+						 	width: 220px;
+						 	margin: 5px auto;
+						 	float: right;
+						 }
+
+
+					}  /* End of @media (min-width: 1200px) */
+
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
