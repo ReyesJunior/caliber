@@ -1,14 +1,4 @@
-/*
-Caliber Green #63CC00  alt green : #39CD28;  #00D630
-Caliber lighter blue #216988
-Caliber Darker blue #0E2C3A
-
-Light Grey #DCE0E1
-Dark Grey #B1B1B1
-
-*/
-
-/* Global css */
+/* Global CSS */
 
 body {
 	font-family: "lucida grande";
@@ -26,7 +16,7 @@ body {
 }
 
 .background-image {
-	height: 400px;
+	height: 425px;
 	width: 100%;
 	background-size: cover;
 }
@@ -82,9 +72,9 @@ body {
 	background-color: #39CD28;
 } 
 
-/* -------------------------------   START OF HOME PAGE   --------------------------------*/
+/* --- Start of Home Page --- */
 
-/* Website */
+/* Navigation Bar */
 
 .website-fixed-menu-bar {
 	position: fixed;
@@ -144,7 +134,7 @@ body {
 	color: #555;
 }
 
-/* Homepage content */
+/* Home Page Content */
 
 .homepage.background-image {
 	background-image: url("http://www.overheadjumprope.nl/eng/wp-content/uploads/bg_NmIT8K3kS4ZeI1eZ.jpg");
@@ -198,12 +188,12 @@ body {
 	background-color: white; 
 }
 
-/* -------------------------------START OF Training packages PAGE--------------------------------*/
+/* --- Start of Training Packages Page --- */
 
- .training-packages {
+.training-packages {
  	margin-top: 0px;
  	padding-top: 10px;
- }
+}
 
 .packages.background-image {
 	background-image: url("http://www.splendidwallpaper.com/wp-content/uploads/messi_bicycle_kick_wallpaper_hd-1280x768.jpg");
@@ -238,7 +228,7 @@ body {
 	background-color: white;
 }
 
-/* -------------------------------START OF ABOUT PAGE--------------------------------*/
+/* --- Start of Meet the Trainer Page --- */
 
 .meet-the-trainer {
 	margin: 0px auto;
@@ -250,12 +240,16 @@ body {
  	margin: 0 auto;
  	overflow: hidden;
  	background-color: #EFF2F3;
- }
+}
 
-  /* Bio image and content */
+.qualifications-panel-wrapper {
+ 	background-color: white;
+}
+
+/* Bio Content */
 
 .bio.background-image {
-	width: 275px;
+	width: 95%;
 	height: 275px;
 	margin: 10px auto;
 	background-image: url("http://www.leanitup.com/wp-content/uploads/2014/08/HEALTHY-YOUNG-GUY-DOING-PUSH-UP.jpg");
@@ -278,12 +272,12 @@ body {
 	text-align: center;
 }
 
-/* Education/Cert Panels */
+/* Certification/Education Panels */
 
 .certifications-header, .education-header {
 	width: 100%;
 	margin: 0 auto;
-	padding-bottom: 3%;
+	padding-bottom: 2%;
 	font-size: 18px;
 	text-align: center;
 }
@@ -293,23 +287,28 @@ body {
 	width: 85%;
 	margin: 10px auto;
 	padding: 5%;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 24px;
-	color: white;
-	background-color: #555;
+	color: #555;
+	background-color: white;
 }
 
 .education-column {
 	text-align: center;
 }
 
-/* about me + vision panels */
+.certification-list, .education-list {
+	margin: 0 auto;
+}
+
+/* About Me + Vision Panels */
 
 .about-me-column, .vision-column {
 	width: 85%;
 	margin: 10px auto;
 	padding: 5%;
-	background-color: #555;
+	font-size: 16px;
+	background-color: white;
 }
 
 .about-me-header, .my-vision-header {
@@ -321,7 +320,7 @@ body {
 	letter-spacing: 0.2em;
 	text-align: center;
 	text-transform: uppercase;
-	color: white;
+	color: #555;
 }
 
 .vision-paragraph, .about-me-paragraph {
@@ -330,65 +329,85 @@ body {
 	padding: 5%;
 	font-size: 16px;
 	line-height: 24px;
-	color: white;
+	color: #555;
 }
 
+/* --- Media Queries (over 350px) --- */
 
-/* -------------------------------START OF Contact PAGE--------------------------------*/
-
-.contact-me {
-	margin: 0 auto;
- 	padding-top: 10px;
- 	font-size: 18px;
-}
-
-.contact.background-image {
-	background-image: url('http://dailysocialsmedia.com/wp-content/uploads/2014/11/athlete-girl.jpg');
-	background-position: 30% 0%;
-}
-
-
-
-/* ------------------------------- Media Queries (over 320px) --------------------------------*/
-
-	@media (min-width: 460px) {
+	@media (min-width: 350px) {
 
 		.homepage.background-image, .packages.background-image {
-			height: 450px;
+			height: 450px; /* moved up 25px */
+		}
+
+		.homepage.content-column, .packages.content-column {
+			margin: 15px auto; /* moved up 5px */
 		}
 
 		.homepage.content-column-header, .packages.content-column-header {
-			font-size: 22px;
+			font-size: 22px; /* original 20px */
+		}
+
+		.qualifications-panel-wrapper {
+		 	width: 95%;
+		 	margin: 0 auto;
+		 	overflow: hidden;
+		}
+
+		.certifications-header, .education-header {
+			width: 100%;
+			margin: 0 auto;
+			padding-bottom: 3%;
+			font-size: 18px;
+			text-align: center;
 		}
 
 		.certifications-column, .education-column {
-			display: inline-block;
-			vertical-align: top;
-			width: 35%;
-			margin-left: 3%;
 			height: 200px;
+			width: 90%;
+			padding: 5%;
+			font-size: 16px;
+			line-height: 24px;
 		}
+	} /* End of @media (min-width: 350px) */
 
-	} /* End of @media (min-width: 460px) */
 
-
-		@media (min-width: 570px) {
+		@media (min-width: 450px) {
 
 			.homepage.background-image, .packages.background-image {
-				height: 475px;
+				height: 475px; /* moved up 25px */
 			}
 
-			.homepage.content-column, .packages.content-column {
-				padding: 4% 5% 5% 5%;
-				width: 428px;
+			.homepage.background-text-overlay {
+				width: 350px;
+				margin-left: 15%;
 			}
 
-		} /* End of @media (min-width: 651px) */
+			.caliber { 
+				height: 65px; /* moved up 5px */
+				width: 280px; /* moved up 5px */
+				padding-top: 20px; /* moved up 4px */
+				font-size: 38px; /* moved up 2px */
+			}
 
-			@media (min-width: 680px) {
+			.homepage.content-column-header, .packages.content-column-header {
+				font-size: 24px; /* original 20px */
+			}
+
+			.certifications-column, .education-column {
+				display: inline-block;
+				vertical-align: top;
+				width: 40%;
+				float: left;
+				height: 200px;
+			}
+		} /* End of @media (min-width: 450px) */
+
+
+			@media (min-width: 550px) {
 
 				.homepage.background-image, .packages.background-image {
-					height: 500px;
+					height: 500px; /* moved up 25px */
 				}
 
 				.homepage.content-column-header, .packages.content-column-header {
@@ -396,149 +415,256 @@ body {
 				}
 
 				.homepage.content-column, .packages.content-column {
-					padding-top: 3.5%;
+					padding-top: 3.5%; /* moved down 1.5% */
+					margin: 20px auto; /* moved up 5px */
 				}
-
-	 			.about.bottom-section-wrapper {
-				 	display: inline-block;
-					vertical-align: top;
-					height: 850px;
-				 	width: 50%;
-				 	float: left;
-				 }
-
-				 .about-me-panel-wrapper {
-				 	height: 326px;
-				 	width: 95%;
-				 	margin: 25px auto 0 auto;
-				 }
-
-				 .vision-panel-wrapper {
-				 	height: 400px;
-				 	width: 95%;
-				 	margin-top: 0px;
-				 }
-
-				 .about-me-header, .my-vision-header {
-					width: 100%;
-				}
-
-				 .about.top-section-wrapper {
-					display: inline-block;
-					vertical-align: top;
-					height: 850px;
-				 	width: 50%;
-				 	float: right;
-				 }
-
-				 .bio.background-image {
-				 	height: 305px;
-				 	width: 90%;
-	    			margin: 25px auto;
-				 }
-
-				 .bio.background-image-overlay {
-				 	margin: 260px auto 0 auto;
-				 }
-
-				  .qualifications-panel-wrapper {
-				 	width: 325px;
-				 	margin: 5px auto;
-				 }
-
-				 .certifications-column, .education-column {
-				 	height: 180px;
-				 	width: 300px;
-				 	margin: 5px auto;
-				 }
-
 			} /* End of @media (min-width: 680px) */
 
-				@media (min-width: 900px) {
 
-				}
+				@media (min-width: 650px) {
+
+					.homepage.background-image, .packages.background-image {
+						height: 525px; /* moved up 25px */
+					}
+
+					.homepage.content-column, .packages.content-column {
+						width: 565px;
+					}
+
+					.about.bottom-section-wrapper, .about.top-section-wrapper {
+					 	display: inline-block;
+						vertical-align: top;
+						height: 925px;
+					 	width: 50%;
+					 	float: right;
+					 	padding: 3% 0 5% 0;
+					}
+
+					.about-me-column, .bio.background-image {
+					 	height: 370px;
+					 	width: 85%;
+					 	margin: 0 auto;
+					}
+
+					.bio.background-image {
+					 	width: 95%;
+					 	padding: 5% 0;
+					}
+
+					.vision-column {
+					 	height: 430px;
+					 	width: 85%;
+					 	margin-top: 25px;
+					}
+
+					.bio.background-image-overlay {
+					 	width: 100%;
+					 	margin: 345px auto 0 auto;
+					}
+
+					.qualifications-panel-wrapper {
+					  	height: 430px;
+					 	width: 95%;
+					 	padding: 1% 0 9% 0;
+					 	margin-top: 25px;
+					}
+
+					.certifications-column, .education-column {
+					 	height: 200px;
+					 	width: 90%;
+					 	margin: 0 auto 10px auto;
+					}
+
+					.certifications-header, .education-header {
+					 	font-size: 18px; /* originally 18px */
+					 	text-transform: uppercase;
+					 	letter-spacing: 0.1em;
+					}
+				}  /* End of @media (min-width: 650px) */
 
 
-					@media (min-width: 1200px) {
+					@media (min-width: 750px) {
+
 						.homepage.background-image, .packages.background-image {
-							height: 500px;
+							height: 550px; /* moved up 25px */
 						}
 
-						.homepage.content-column-header, .packages.content-column-header {
-							font-size: 24px;
+						.caliber { 
+							height: 70px; /* moved up 5px */
+							width: 285px; /* moved up 5px */
+							margin: 30px auto; /* moved up 5px */
+							padding-top: 24px; /* moved up 4px */
+							font-size: 40px; /* moved up 2px */
 						}
 
-						.homepage.content-column, .packages.content-column {
-							padding-top: 3.5%;
-						}
-
-			 			.about.bottom-section-wrapper {
-						 	display: inline-block;
-							vertical-align: top;
+						.about.bottom-section-wrapper, .about.top-section-wrapper {
 							height: 850px;
-						 	width: 50%;
-						 	float: left;
-						 }
-
-						 .about-me-panel-wrapper {
-						 	height: 326px;
-						 	width: 80%;
-						 	margin: 25px auto 0 auto;
-						 }
-
-						 .vision-panel-wrapper {
-						 	height: 400px;
-						 	width: 80%;
-						 	margin-top: 0px;
-						 }
-
-						 .about-me-header, .my-vision-header {
-							width: 100%;
 						}
 
-						 .about.top-section-wrapper {
-							display: inline-block;
-							vertical-align: top;
-							height: 850px;
-						 	width: 50%;
-						 	float: right;
-						 }
+						.about-me-column, .bio.background-image {
+						 	height: 330px;
+						}
 
-						 .bio.background-image {
-						 	width: 80%;
-						 	height: 320px;
-			    			margin: 25px auto;
-						 }
+						.bio.background-image-overlay {
+						 	margin: 310px auto 0 auto;
+						}
 
-						 .bio.background-image-overlay {
-						 	margin: 260px auto 0 auto;
-						 }
+						.vision-column, .qualifications-panel-wrapper {
+							height: 400px;
+						}
 
-						  .qualifications-panel-wrapper {
-						 	width: 80%;
-						 	margin: 5px auto;
-						 }
-
-						 .certifications-column {
-						 	height: 220px;
-						 	width: 220px;
-						 	margin: 5px auto;
-						 	float: left;
-						 }
+						.certifications-column, .education-column {
+						 	height: 160px;
+						}
+					}  /* End of @media (min-width: 750px) */
 
 
-						 .education-column {
-						 	height: 220px;
-						 	width: 220px;
-						 	margin: 5px auto;
-						 	float: right;
-						 }
+							@media (min-width: 850px) {
+
+								.homepage.background-image, .packages.background-image {
+									height: 575px; /* moved up 25px */
+								}
+
+								.vision-column, .qualifications-panel-wrapper {
+								 	height: 375px;
+								}
+
+								.certifications-column, .education-column {
+								 	height: 150px;
+								}
+							}  /* End of @media (min-width: 850px) */
 
 
-					}  /* End of @media (min-width: 1200px) */
+								@media (min-width: 950px) {
+
+									.homepage.background-image, .packages.background-image {
+										height: 600px; /* moved up 25px */
+									}
+
+									.homepage.content-column-header, .packages.content-column-header {
+										font-size: 20px; /* back to original 20px */
+									}
+
+									.homepage.content-column, .packages.content-column {
+										display: inline-block;
+										vertical-align: top;
+										float: left;
+										height: 400px; /* fixed height */
+										width: 22%; /* New fixed width */
+										margin: 4% 0% 3% 1%; /* moved up 5px */
+									}
+
+									.packages.content-column {
+										height: 585px;
+									}
+
+									.about.bottom-section-wrapper, .about.top-section-wrapper {
+										height: 790px;
+									}
+
+									.about-me-column, .bio.background-image {
+									 	height: 280px;
+									}
+
+									.bio.background-image-overlay {
+									 	margin: 265px auto 0 auto;
+									}
+
+									.vision-column, .qualifications-panel-wrapper {
+									 	height: 350px;
+									}
+
+									.certifications-column, .education-column {
+									 	height: 140px;
+									}
+								}  /* End of @media (min-width: 950px) */
 
 
-						
+									@media (min-width: 1050px) {
+
+										.homepage.background-image, .packages.background-image {
+											height: 625px; /* moved up 25px */
+										}
+
+										.homepage.content-column-header, .packages.content-column-header {
+											font-size: 23px; /* original 20px */
+										}
+
+										.homepage.content-column {
+											height: 360px;
+										}
+
+										.packages.content-column {
+											height: 525px;
+										}
+
+										.caliber { 
+											height: 75px; /* moved up 5px */
+											width: 290px; /* moved up 5px */
+											margin: 35px auto; /* moved up 5px */
+											padding-top: 26px; /* moved up 2px */
+											font-size: 42px; /* moved up 2px */
+										}
+
+										.about.bottom-section-wrapper, .about.top-section-wrapper {
+											height: 775px;
+										}
+
+										.vision-column, .qualifications-panel-wrapper {
+										 	height: 325px;
+										}
+									}  /* End of @media (min-width: 1050px) */
+
+
+											@media (min-width: 1150px) {
+
+												.homepage.background-image, .packages.background-image {
+													height: 650px; /* moved up 25px */
+												}
+
+												.homepage.content-column {
+													height: 325px;
+												}
+
+												.packages.content-column {
+													height: 465px;
+												}
+
+												.about.bottom-section-wrapper, .about.top-section-wrapper {
+													height: 750px;
+												}
+
+												.about-me-column, .bio.background-image {
+												 	height: 250px;
+												}
+
+												.bio.background-image-overlay {
+												 	margin: 240px auto 0 auto;
+												}
+											}  /* End of @media (min-width: 1150px) */
+
+												@media (min-width: 1250px) {
+
+													.homepage.content-column {
+														height: 300px;
+													}
+
+													.packages.content-column {
+														height: 425px;
+													}
+												}  /* End of @media (min-width: 1250px) */
+
+
+													@media (min-width: 1400px) {
+
+														.homepage.content-column {
+															height: 280px;
+														}
+
+														.packages.content-column {
+															height: 385px;
+														}
+													}  /* End of @media (min-width: 1400px) */
 
 
 
