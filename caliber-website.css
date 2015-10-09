@@ -139,6 +139,11 @@ body {
 	color: #555;
 }
 
+.nav-button a {
+	text-decoration: none;
+	color: #555;
+}
+
 /* Home Page Content */
 
 .homepage.background-image {
