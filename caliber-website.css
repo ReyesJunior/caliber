@@ -28,7 +28,7 @@ body {
 
 .content-column {
 	width: 85%;
-	margin: 10px auto;
+	margin: 10px auto 0 auto;
 	padding: 5%;
 }
 
@@ -63,9 +63,14 @@ body {
 	color: #555;
 }
 
+.anchor-space-placeholder {
+	height: 60px;
+	background-color: #EFF2F3;
+}
+
 .top-header {
  	height: 35px;
- 	margin: 0 auto;
+ 	margin: 0px auto 0 auto;
  	padding-bottom: 2px;
 	font-size: 16px;
  	color: white;
