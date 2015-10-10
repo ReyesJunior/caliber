@@ -208,6 +208,7 @@ body {
 .packages.background-image {
 	background-image: url(http://i57.tinypic.com/ivvo21.jpg); /* or http://i59.tinypic.com/6i8aqu.jpg ?*/
 	background-size: cover;
+	background-position-x: -200px;
 }
 
 .packages.background-text-overlay {
@@ -358,6 +359,10 @@ body {
 			font-size: 22px; /* original 20px */
 		}
 
+		.packages.background-image {
+			background-position-x: -180px;
+		}
+
 		.qualifications-panel-wrapper {
 		 	width: 95%;
 		 	margin: 0 auto;
@@ -441,6 +446,10 @@ body {
 					font-size: 40px; /* moved up 2px */
 				}
 
+				.packages.background-image {
+					background-position-x: -150px;
+				}
+
 				.evolve {
 					width: 305px; /* Moved up 15px */
 					font-size: 28px; /* Moved up 2px */
@@ -465,6 +474,10 @@ body {
 						width: 300px; /* moved up 15px */
 						padding-top: 28px; /* moved up 4px */
 						font-size: 42px; /* moved up 2px */
+					}
+
+					.packages.background-image {
+						background-position-x: -125px;
 					}
 
 					.about.bottom-section-wrapper, .about.top-section-wrapper {
@@ -534,6 +547,10 @@ body {
 							font-size: 44px; /* moved up 2px */
 						}
 
+						.packages.background-image {
+							background-position-x: -100px;
+						}
+
 						.evolve {
 							width: 320px; /* Moved up 15px */
 							font-size: 30px; /* Moved up 2px */
@@ -568,6 +585,10 @@ body {
 									height: 575px; /* moved up 25px */
 								}
 
+								.packages.background-image {
+									background-position-x: -75px;
+								}
+
 								.vision-column, .qualifications-panel-wrapper {
 								 	height: 375px;
 								}
@@ -596,6 +617,10 @@ body {
 										height: 400px; /* fixed height */
 										width: 22%; /* New fixed width */
 										margin: 4% 0% 3% 1%; /* moved up 5px */
+									}
+
+									.packages.background-image {
+										background-position-x: -25px;
 									}
 
 									.packages.background-text-overlay {
@@ -642,16 +667,20 @@ body {
 											height: 360px;
 										}
 
-										.packages.content-column {
-											height: 525px;
-										}
-
 										.homepage.background-text-overlay { 
 											margin-top: 110px;
 										}
 
+										.packages.background-image {
+											background-position-x: 0px;
+										}
+
 										.packages.background-text-overlay {
 											margin-top: 30px;
+										}
+
+										.packages.content-column {
+											height: 525px;
 										}
 
 										.about.bottom-section-wrapper, .about.top-section-wrapper {
