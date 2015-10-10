@@ -261,11 +261,12 @@ body {
 /* Bio Content */
 
 .bio.background-image {
+	height: 400px;
 	width: 95%;
 	margin: 10px auto;
-	background-image: url(http://i59.tinypic.com/8zr0y1.jpg);
-	background-size: 100%, auto;
-	background-position: 0% 10%;
+	background-image: url(http://i.imgur.com/pA1O4lE.jpg?1);
+	background-size: cover;
+	background-position-x: 40%;
 	overflow: hidden;
 }
 
@@ -456,6 +457,10 @@ body {
 					line-height: 39px; /* 1.4x */
 				}
 
+				.bio.background-image {
+					background-position-y: 30%;
+				}
+
 			} /* End of @media (min-width: 680px) */
 
 
@@ -496,10 +501,8 @@ body {
 					}
 
 					.bio.background-image {
-					 	width: 95%;
-					 	padding: 5% 0;
-					 	background-size: cover;
-					 	background-position: 20% 0%;
+						padding: 5% 0;
+						width: 95%;
 					}
 
 					.vision-column {
@@ -623,10 +626,6 @@ body {
 										background-position-x: -25px;
 									}
 
-									.packages.background-text-overlay {
-										margin-top: 20px;
-									}
-
 									.packages.content-column {
 										height: 585px;
 									}
@@ -635,21 +634,33 @@ body {
 										height: 790px;
 									}
 
-									.about-me-column, .bio.background-image {
+									.about-me-column {
 									 	height: 280px;
 									}
 
-									.bio.background-image-overlay {
-									 	margin: 265px auto 0 auto;
+									.bio.background-image {
+										height: 410px;
 									}
 
-									.vision-column, .qualifications-panel-wrapper {
+									.bio.background-image-overlay {
+									 	margin: 395px auto 0 auto;
+									}
+
+									.vision-column {
 									 	height: 350px;
 									}
 
-									.certifications-column, .education-column {
-									 	height: 140px;
+									.qualifications-panel-wrapper {
+									 	height: 220px;
 									}
+
+									.certifications-column, .education-column {
+										display: inline-block;
+										vertical-align: top;
+										width: 40%;
+										float: left;
+									}
+
 								}  /* End of @media (min-width: 950px) */
 
 
@@ -675,10 +686,6 @@ body {
 											background-position-x: 0px;
 										}
 
-										.packages.background-text-overlay {
-											margin-top: 30px;
-										}
-
 										.packages.content-column {
 											height: 525px;
 										}
@@ -687,8 +694,12 @@ body {
 											height: 775px;
 										}
 
-										.vision-column, .qualifications-panel-wrapper {
+										.vision-column {
 										 	height: 325px;
+										}
+
+										.qualifications-panel-wrapper {
+										 	height: 195px;
 										}
 									}  /* End of @media (min-width: 1050px) */
 
@@ -711,16 +722,16 @@ body {
 													height: 750px;
 												}
 
-												.about-me-column, .bio.background-image {
+												.about-me-column {
 												 	height: 250px;
 												}
 
 												.bio.background-image {
-													background-position: 40% 10%;
+													height: 380px;
 												}
 
 												.bio.background-image-overlay {
-												 	margin: 240px auto 0 auto;
+												 	margin: 370px auto 0 auto;
 												}
 											}  /* End of @media (min-width: 1150px) */
 
