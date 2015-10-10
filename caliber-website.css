@@ -147,12 +147,12 @@ body {
 /* Home Page Content */
 
 .homepage.background-image {
-	background-image: url("http://www.overheadjumprope.nl/eng/wp-content/uploads/bg_NmIT8K3kS4ZeI1eZ.jpg");
-	background-position: 60% 0%;
+	background-image: url(http://i58.tinypic.com/28n6b.jpg);
+	background-size: cover; 
 }
 
 .homepage.background-text-overlay {
-	margin: 80px auto 0 auto;
+	margin: 100px auto 0 auto;
 }
 
 .caliber, .strength-and-conditioning, .moto {
@@ -163,7 +163,7 @@ body {
 .caliber {
 	height: 60px;
 	width: 275px;
-	margin: 25px auto;
+	margin: 0px auto 10px auto;
 	padding-top: 16px;
 	font-size: 36px;
 	text-transform: uppercase;
@@ -175,7 +175,7 @@ body {
 .strength-and-conditioning {
 	height: 30px;
 	width: 275px;
-	margin: 0px auto;
+	margin: 10px auto 0 auto;
 	padding-top: 12px;
 	font-size: 15px;
 	color: #555;
@@ -184,8 +184,8 @@ body {
 
 .moto {
 	height: 25px;
-	width: 315px;
-	margin: 20px auto 0 auto;
+	width: 275px;
+	margin: 10px auto 0 auto;
 	font-size: 14px; 
 	color: white;
 }
@@ -206,8 +206,8 @@ body {
 }
 
 .packages.background-image {
-	background-image: url("http://www.splendidwallpaper.com/wp-content/uploads/messi_bicycle_kick_wallpaper_hd-1280x768.jpg");
-	background-position: 40% 0%;
+	background-image: url(http://i57.tinypic.com/ivvo21.jpg); /* or http://i59.tinypic.com/6i8aqu.jpg ?*/
+	background-size: cover;
 }
 
 .packages.background-text-overlay {
@@ -215,9 +215,9 @@ body {
 }
 
 .evolve {
+	height: 100px;
 	width: 275px;
-	margin: 40px auto;
-	padding: 5%;
+	margin: 40px auto 0 auto;
 	letter-spacing: 0.2em;
 	text-align: center;
 	font-size: 24px;
@@ -260,16 +260,15 @@ body {
 
 .bio.background-image {
 	width: 95%;
-	height: 275px;
 	margin: 10px auto;
-	background-image: url("http://www.leanitup.com/wp-content/uploads/2014/08/HEALTHY-YOUNG-GUY-DOING-PUSH-UP.jpg");
-	background-size: cover;
-	background-position: 40% 0%;
+	background-image: url(http://i59.tinypic.com/8zr0y1.jpg);
+	background-size: 100%, auto;
+	background-position: 0% 10%;
 	overflow: hidden;
 }
 
 .bio.background-image-overlay {
-	margin: 230px auto 0 auto;
+	margin: 355px auto 0 auto;
 	height: 45px;
 	background-color: rgba(0,0,0,0.90);	
 }
@@ -390,7 +389,6 @@ body {
 
 			.homepage.background-text-overlay {
 				width: 350px;
-				margin-left: 15%;
 			}
 
 			.caliber { 
@@ -428,6 +426,14 @@ body {
 					padding-top: 3.5%; /* moved down 1.5% */
 					margin: 20px auto; /* moved up 5px */
 				}
+
+				.caliber { 
+					height: 70px; /* moved up 5px */
+					width: 285px; /* moved up 5px */
+					padding-top: 24px; /* moved up 4px */
+					font-size: 40px; /* moved up 2px */
+				}
+
 			} /* End of @media (min-width: 680px) */
 
 
@@ -439,6 +445,13 @@ body {
 
 					.homepage.content-column, .packages.content-column {
 						width: 565px;
+					}
+
+					.caliber { 
+						height: 75px; /* moved up 5px */
+						width: 300px; /* moved up 15px */
+						padding-top: 28px; /* moved up 4px */
+						font-size: 42px; /* moved up 2px */
 					}
 
 					.about.bottom-section-wrapper, .about.top-section-wrapper {
@@ -459,6 +472,8 @@ body {
 					.bio.background-image {
 					 	width: 95%;
 					 	padding: 5% 0;
+					 	background-size: cover;
+					 	background-position: 20% 0%;
 					}
 
 					.vision-column {
@@ -500,11 +515,10 @@ body {
 						}
 
 						.caliber { 
-							height: 70px; /* moved up 5px */
-							width: 285px; /* moved up 5px */
-							margin: 30px auto; /* moved up 5px */
-							padding-top: 24px; /* moved up 4px */
-							font-size: 40px; /* moved up 2px */
+							height: 80px; /* moved up 5px */
+							width: 315px; /* moved up 15px */
+							padding-top: 28px;
+							font-size: 44px; /* moved up 2px */
 						}
 
 						.about.bottom-section-wrapper, .about.top-section-wrapper {
@@ -608,12 +622,8 @@ body {
 											height: 525px;
 										}
 
-										.caliber { 
-											height: 75px; /* moved up 5px */
-											width: 290px; /* moved up 5px */
-											margin: 35px auto; /* moved up 5px */
-											padding-top: 26px; /* moved up 2px */
-											font-size: 42px; /* moved up 2px */
+										.homepage.background-text-overlay { 
+											margin-top: 110px;
 										}
 
 										.about.bottom-section-wrapper, .about.top-section-wrapper {
@@ -646,6 +656,10 @@ body {
 
 												.about-me-column, .bio.background-image {
 												 	height: 250px;
+												}
+
+												.bio.background-image {
+													background-position: 40% 10%;
 												}
 
 												.bio.background-image-overlay {
