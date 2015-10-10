@@ -217,10 +217,11 @@ body {
 .evolve {
 	height: 100px;
 	width: 275px;
-	margin: 40px auto 0 auto;
+	margin: 50px auto 0 auto;
 	letter-spacing: 0.2em;
 	text-align: center;
 	font-size: 24px;
+	line-height: 36px; /* 1.5x */
 	color: white;
 }
 
@@ -391,6 +392,10 @@ body {
 				width: 350px;
 			}
 
+			.homepage.content-column-header, .packages.content-column-header {
+				font-size: 24px; /* original 20px */
+			}
+
 			.caliber { 
 				height: 65px; /* moved up 5px */
 				width: 280px; /* moved up 5px */
@@ -398,8 +403,10 @@ body {
 				font-size: 38px; /* moved up 2px */
 			}
 
-			.homepage.content-column-header, .packages.content-column-header {
-				font-size: 24px; /* original 20px */
+			.evolve {
+				width: 290px; /* Moved up 15px */
+				font-size: 26px; /* Moved up 2px */
+				line-height: 39px; /* 1.5x */
 			}
 
 			.certifications-column, .education-column {
@@ -432,6 +439,12 @@ body {
 					width: 285px; /* moved up 5px */
 					padding-top: 24px; /* moved up 4px */
 					font-size: 40px; /* moved up 2px */
+				}
+
+				.evolve {
+					width: 305px; /* Moved up 15px */
+					font-size: 28px; /* Moved up 2px */
+					line-height: 39px; /* 1.4x */
 				}
 
 			} /* End of @media (min-width: 680px) */
@@ -521,6 +534,12 @@ body {
 							font-size: 44px; /* moved up 2px */
 						}
 
+						.evolve {
+							width: 320px; /* Moved up 15px */
+							font-size: 30px; /* Moved up 2px */
+							line-height: 42px; /* 1.4x */
+						}
+
 						.about.bottom-section-wrapper, .about.top-section-wrapper {
 							height: 850px;
 						}
@@ -556,6 +575,7 @@ body {
 								.certifications-column, .education-column {
 								 	height: 150px;
 								}
+
 							}  /* End of @media (min-width: 850px) */
 
 
@@ -576,6 +596,10 @@ body {
 										height: 400px; /* fixed height */
 										width: 22%; /* New fixed width */
 										margin: 4% 0% 3% 1%; /* moved up 5px */
+									}
+
+									.packages.background-text-overlay {
+										margin-top: 20px;
 									}
 
 									.packages.content-column {
@@ -624,6 +648,10 @@ body {
 
 										.homepage.background-text-overlay { 
 											margin-top: 110px;
+										}
+
+										.packages.background-text-overlay {
+											margin-top: 30px;
 										}
 
 										.about.bottom-section-wrapper, .about.top-section-wrapper {
