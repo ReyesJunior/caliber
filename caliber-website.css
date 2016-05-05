@@ -6,32 +6,80 @@ body {
 	padding: 0;
 }
 
-.website-wrapper, .wrapper, {
-	width: 100%;
-	overflow: hidden;
-}
+/* /////---------------------
 
-.background-image-overlay, .background-text-overlay, .content-columns-container {
+	Background-images, -overlay, -text
+
+/////---------------------- */
+
+.section-break {
+	margin-top: 60px;
 	width: 100%;
-	overflow: hidden;
 }
 
 .background-image {
-	height: 425px;
-	width: 100%;
-	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
 
-.background-image-overlay {
+.background-overlay {
+	width: 100%;
 	height: 100%;
+}
+
+.background-overlay {
+	position: absolute;
 	background-color: rgba(0, 0, 0, 0.35);
 }
 
-.content-column {
-	width: 85%;
-	margin: 10px auto 0 auto;
-	padding: 5%;
+.overlay-text {
+    max-width: 375px;
+    margin: 12px auto 0 auto;
 }
+
+/* /////---------------------
+
+	content-columns
+
+/////---------------------- */
+
+.content-wrapper {
+	margin: 0;
+	padding: 0;
+	background-color: #EFF2F3;
+}
+
+.content-column {
+	margin: 10px auto 0 auto;
+	background-color: #EFF2F3;
+	color: #555;
+}
+
+.outer-column {
+	margin: 25px auto;
+	max-width: 500px;
+	padding: 25px;
+	background-color: white;
+}
+
+.column-header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header-underline {
+	border: 0;
+	height: 2px;
+	background-color: #39CD28;
+}
+
+.inner-column {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+
+/*
 
 .content-column-header, .content-column-paragraph, .top-header {
 	width: 100%;
@@ -43,26 +91,6 @@ body {
 	letter-spacing: 0.2em;
 }
 
-.content-column-header {
-	margin: 2px auto 0 auto;
-	font-size: 20px;
-	line-height: 28px; /* 1.4x */
-	color: #555;
-}
-
-.header-underline {
-	border: 0;
-	height: 2px;
-	background-color: #39CD28;
-}
-
-.content-column-paragraph {
-	width: 90%;
-	margin: 0 auto;
-	font-size: 16px;
-	line-height: 24px; /* 1.5x */
-	color: #555;
-}
 
 .anchor-space-placeholder {
 	height: 60px;
@@ -76,7 +104,7 @@ body {
 	font-size: 16px;
  	color: white;
 	background-color: #39CD28;
-} 
+} */
 
 /* /////---------------------
 
@@ -89,6 +117,7 @@ body {
 	height: 60px;
 	width: 100%;
 	background-color: #39CD28;
+	z-index: 1;
 }
 
 .dropdown-hamburger {
@@ -158,19 +187,12 @@ body {
 	color: white;
 }
 
-/* --- Start of Home Page --- */
+/* /////---------------------
 
+	Home page
 
-/* Home Page Content */
+/////---------------------- */
 
-.homepage.background-image {
-	background-image: url(http://i58.tinypic.com/28n6b.jpg);
-	background-size: cover; 
-}
-
-.homepage.background-text-overlay {
-	margin: 100px auto 0 auto;
-}
 
 .caliber, .strength-and-conditioning, .moto {
 	text-align: center;
@@ -181,7 +203,7 @@ body {
 	height: 60px;
 	width: 275px;
 	margin: 0px auto 10px auto;
-	padding-top: 16px;
+	padding-top: 8px;
 	font-size: 36px;
 	text-transform: uppercase;
 	color: white;
@@ -193,17 +215,17 @@ body {
 	height: 30px;
 	width: 275px;
 	margin: 10px auto 0 auto;
-	padding-top: 12px;
-	font-size: 15px;
+	padding-top: 4px;
+	font-size: 16px;
 	color: #555;
 	background-color: white;
 }
 
 .moto {
-	height: 25px;
+	height: 30px;
 	width: 275px;
 	margin: 10px auto 0 auto;
-	font-size: 14px; 
+	font-size: 15px; 
 	color: white;
 }
 
@@ -363,208 +385,18 @@ body {
 
 /* --- Media Queries (over 350px) --- */
 
-	@media (min-width: 350px) {
 
-		.homepage.background-image, .packages.background-image {
-			height: 450px; /* moved up 25px */
-		}
-
-		.homepage.content-column, .packages.content-column {
-			margin: 15px auto; /* moved up 5px */
-		}
-
-		.homepage.content-column-header, .packages.content-column-header {
-			font-size: 22px; /* original 20px */
-		}
-
-		.packages.background-image {
-			background-position-x: -180px;
-		}
-
-		.qualifications-panel-wrapper {
-		 	width: 95%;
-		 	margin: 0 auto;
-		 	overflow: hidden;
-		}
-
-		.certifications-header, .education-header {
-			width: 100%;
-			margin: 0 auto;
-			padding-bottom: 3%;
-			font-size: 18px;
-			text-align: center;
-		}
-
-		.certifications-column, .education-column {
-			height: 200px;
-			width: 90%;
-			padding: 5%;
-			font-size: 16px;
-			line-height: 24px;
-		}
-	} /* End of @media (min-width: 350px) */
-
-
-		@media (min-width: 450px) {
-
-			.homepage.background-image, .packages.background-image {
-				height: 475px; /* moved up 25px */
-			}
-
-			.homepage.background-text-overlay {
-				width: 350px;
-			}
-
-			.homepage.content-column-header, .packages.content-column-header {
-				font-size: 24px; /* original 20px */
-			}
-
-			.caliber { 
-				height: 65px; /* moved up 5px */
-				width: 280px; /* moved up 5px */
-				padding-top: 20px; /* moved up 4px */
-				font-size: 38px; /* moved up 2px */
-			}
-
-			.evolve {
-				width: 290px; /* Moved up 15px */
-				font-size: 26px; /* Moved up 2px */
-				line-height: 39px; /* 1.5x */
-			}
-
-			.certifications-column, .education-column {
-				display: inline-block;
-				vertical-align: top;
-				width: 40%;
-				float: left;
-				height: 200px;
-			}
-		} /* End of @media (min-width: 450px) */
-
-
-			@media (min-width: 550px) {
-
-				.homepage.background-image, .packages.background-image {
-					height: 500px; /* moved up 25px */
-				}
-
-				.homepage.content-column-header, .packages.content-column-header {
-					font-size: 24px;
-				}
-
-				.homepage.content-column, .packages.content-column {
-					padding-top: 3.5%; /* moved down 1.5% */
-					margin: 20px auto; /* moved up 5px */
-				}
-
-				.caliber { 
-					height: 70px; /* moved up 5px */
-					width: 285px; /* moved up 5px */
-					padding-top: 24px; /* moved up 4px */
-					font-size: 40px; /* moved up 2px */
-				}
-
-				.packages.background-image {
-					background-position-x: -150px;
-				}
-
-				.evolve {
-					width: 305px; /* Moved up 15px */
-					font-size: 28px; /* Moved up 2px */
-					line-height: 39px; /* 1.4x */
-				}
-
-				.bio.background-image {
-					background-position-y: 30%;
-				}
-
-			} /* End of @media (min-width: 680px) */
-
-
-				@media (min-width: 650px) {
-
-					.homepage.background-image, .packages.background-image {
-						height: 525px; /* moved up 25px */
-					}
-
-					.homepage.content-column, .packages.content-column {
-						width: 565px;
-					}
-
-					.caliber { 
-						height: 75px; /* moved up 5px */
-						width: 300px; /* moved up 15px */
-						padding-top: 28px; /* moved up 4px */
-						font-size: 42px; /* moved up 2px */
-					}
-
-					.packages.background-image {
-						background-position-x: -125px;
-					}
-
-					.about.bottom-section-wrapper, .about.top-section-wrapper {
-					 	display: inline-block;
-						vertical-align: top;
-						height: 925px;
-					 	width: 50%;
-					 	float: right;
-					 	padding: 3% 0 5% 0;
-					}
-
-					.about-me-column, .bio.background-image {
-					 	height: 370px;
-					 	width: 85%;
-					 	margin: 0 auto;
-					}
-
-					.bio.background-image {
-						padding: 5% 0;
-						width: 95%;
-					}
-
-					.vision-column {
-					 	height: 430px;
-					 	width: 85%;
-					 	margin-top: 25px;
-					}
-
-					.bio.background-image-overlay {
-					 	width: 100%;
-					 	margin: 345px auto 0 auto;
-					}
-
-					.qualifications-panel-wrapper {
-					  	height: 430px;
-					 	width: 95%;
-					 	padding: 1% 0 9% 0;
-					 	margin-top: 25px;
-					}
-
-					.certifications-column, .education-column {
-					 	height: 200px;
-					 	width: 90%;
-					 	margin: 0 auto 10px auto;
-					}
-
-					.certifications-header, .education-header {
-					 	font-size: 18px; /* originally 18px */
-					 	text-transform: uppercase;
-					 	letter-spacing: 0.1em;
-					}
-				}  /* End of @media (min-width: 650px) */
-
-
-					@media (min-width: 750px) {
+					@media (min-width: 768px) {
 
 						.homepage.background-image, .packages.background-image {
 							height: 550px; /* moved up 25px */
 						}
 
 						.caliber { 
-							height: 80px; /* moved up 5px */
-							width: 315px; /* moved up 15px */
-							padding-top: 28px;
-							font-size: 44px; /* moved up 2px */
+							height: 100px;
+						    width: 315px;
+						    padding-top: 20px;
+						    font-size: 45px;
 						}
 
 						.packages.background-image {
@@ -575,6 +407,12 @@ body {
 							width: 320px; /* Moved up 15px */
 							font-size: 30px; /* Moved up 2px */
 							line-height: 42px; /* 1.4x */
+						}
+
+
+
+						.inner-column {
+							  
 						}
 
 						.about.bottom-section-wrapper, .about.top-section-wrapper {
@@ -597,199 +435,6 @@ body {
 						 	height: 160px;
 						}
 					}  /* End of @media (min-width: 750px) */
-
-
-							@media (min-width: 850px) {
-
-								.homepage.background-image, .packages.background-image {
-									height: 575px; /* moved up 25px */
-								}
-
-								.packages.background-image {
-									background-position-x: -75px;
-								}
-
-								.vision-column, .qualifications-panel-wrapper {
-								 	height: 375px;
-								}
-
-								.certifications-column, .education-column {
-								 	height: 150px;
-								}
-
-							}  /* End of @media (min-width: 850px) */
-
-
-								@media (min-width: 950px) {
-
-									.homepage.background-image, .packages.background-image {
-										height: 600px; /* moved up 25px */
-									}
-
-									.homepage.content-column-header, .packages.content-column-header {
-										font-size: 20px; /* back to original 20px */
-									}
-
-									.homepage.content-column, .packages.content-column {
-										display: inline-block;
-										vertical-align: top;
-										float: left;
-										height: 400px; /* fixed height */
-										width: 22%; /* New fixed width */
-										margin: 4% 0% 3% 1%; /* moved up 5px */
-									}
-
-									.packages.background-image {
-										background-position-x: -25px;
-									}
-
-									.packages.content-column {
-										height: 585px;
-									}
-
-									.about.bottom-section-wrapper, .about.top-section-wrapper {
-										height: 790px;
-									}
-
-									.about-me-column {
-									 	height: 280px;
-									}
-
-									.bio.background-image {
-										height: 410px;
-									}
-
-									.bio.background-image-overlay {
-									 	margin: 395px auto 0 auto;
-									}
-
-									.vision-column {
-									 	height: 350px;
-									}
-
-									.qualifications-panel-wrapper {
-									 	height: 220px;
-									}
-
-									.certifications-column, .education-column {
-										display: inline-block;
-										vertical-align: top;
-										width: 40%;
-										float: left;
-									}
-
-								}  /* End of @media (min-width: 950px) */
-
-
-									@media (min-width: 1050px) {
-
-										.homepage.background-image, .packages.background-image {
-											height: 625px; /* moved up 25px */
-										}
-
-										.homepage.content-column-header, .packages.content-column-header {
-											font-size: 23px; /* original 20px */
-										}
-
-										.homepage.content-column {
-											height: 360px;
-										}
-
-										.homepage.background-text-overlay { 
-											margin-top: 110px;
-										}
-
-										.packages.background-image {
-											background-position-x: 0px;
-										}
-
-										.packages.content-column {
-											height: 525px;
-										}
-
-										.about.bottom-section-wrapper, .about.top-section-wrapper {
-											height: 775px;
-										}
-
-										.vision-column {
-										 	height: 325px;
-										}
-
-										.qualifications-panel-wrapper {
-										 	height: 195px;
-										}
-									}  /* End of @media (min-width: 1050px) */
-
-
-											@media (min-width: 1150px) {
-
-												.homepage.background-image, .packages.background-image {
-													height: 650px; /* moved up 25px */
-												}
-
-												.homepage.content-column {
-													height: 325px;
-												}
-
-												.packages.content-column {
-													height: 465px;
-												}
-
-												.about.bottom-section-wrapper, .about.top-section-wrapper {
-													height: 750px;
-												}
-
-												.about-me-column {
-												 	height: 250px;
-												}
-
-												.bio.background-image {
-													height: 380px;
-												}
-
-												.bio.background-image-overlay {
-												 	margin: 370px auto 0 auto;
-												}
-											}  /* End of @media (min-width: 1150px) */
-
-												@media (min-width: 1250px) {
-
-													.homepage.content-column {
-														height: 300px;
-													}
-
-													.packages.content-column {
-														height: 425px;
-													}
-												}  /* End of @media (min-width: 1250px) */
-
-
-													@media (min-width: 1400px) {
-
-														.homepage.content-column {
-															height: 280px;
-														}
-
-														.packages.content-column {
-															height: 385px;
-														}
-													}  /* End of @media (min-width: 1400px) */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
