@@ -2,7 +2,8 @@
 
 body {
 	font-family: "lucida grande";
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 }
 
 .website-wrapper, .wrapper, {
@@ -77,34 +78,35 @@ body {
 	background-color: #39CD28;
 } 
 
-/* --- Start of Home Page --- */
+/* /////---------------------
 
-/* Navigation Bar */
+	Sticky Header 
 
-.website-fixed-menu-bar {
+/////---------------------- */
+
+.sticky-header {
 	position: fixed;
 	height: 60px;
 	width: 100%;
 	background-color: #39CD28;
 }
 
-.dropdown-menu-icon {
+.dropdown-hamburger {
 	height: 50px;
 	width: 50px;
 	float: left;
 	margin-top: 5px;
-	margin-left: 2%;
-	background-image: url('http://stepupdate.com/assets/svg/icon-hamburger.svg');
+	background-image: url(http://stepupdate.com/assets/svg/icon-hamburger.svg);
 	background-size: cover;
 }
 
-.fixed-menu-header-container {
+.slidedown-logo {
 	height: 100%;
 	width: 70%;
 	margin: -60px auto 0 auto;
 }
 
-.fixed-menu-header {
+.sliding-logo-text {
 	height: 70%;
 	width: 100%;
 	margin-top: 0;
@@ -112,48 +114,52 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	padding-top: 15px;
-	padding-left: 16px;
+	padding-left: 15px;
 	letter-spacing: 2px;
 	color: white;
 }
 
-.sliding-website-navigation {
+.website-navigation {
 	position: absolute;
 	display: none;
-	height: 165px;
-	width: 200px;
+	width: 320px;
 	top: 60px;
-	background-color: white;
+	left: 0;
+	background-color: #7BFF6C;
 	z-index: 999;
 }
 
+.website-navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
 .nav-button {
-	height: 30px;
-	width: 200px;
-	margin-top: 10px;
-	margin-left: -40px;
-	padding-top: 8px;
-	font-size: 16px;
-	letter-spacing: 1px;
+	margin: 0;
 	list-style: none;
-	color: #555;
+	color: #182B16;
 	text-align: center;
 }
-
-.nav-button a {
-	text-decoration: none;
-	color: #555;
-}
-
-/* :hover effects (nav-buttons) */
 
 .nav-button:hover {
 	background-color: #39CD28;
 }
 
-.nav-button a:hover {
+.nav-button a {
+	display: block;
+	font-size: 16px;
+	padding: 12px;
+	text-decoration: none;
+	color: #182B16;
+}
+
+.nav-button:hover a {
+	text-decoration: none;
 	color: white;
 }
+
+/* --- Start of Home Page --- */
+
 
 /* Home Page Content */
 
