@@ -1,4 +1,11 @@
-/* Global CSS */
+/* /////---------------------
+
+	Global CSS 
+
+	(original color: #39CD28; new color: #28cbdc; #283A3E
+	(imgs: http://i.imgur.com/JZnfkvi.jpg?1)
+
+/////---------------------- */
 
 body {
 	font-family: "lucida grande";
@@ -6,105 +13,31 @@ body {
 	padding: 0;
 }
 
-/* /////---------------------
+.section-header, .sticky-header, .nav-button:hover, .header-underline, .caliber {
+	background-color: #28cbdc;
+}
 
-	Background-images, -overlay, -text
-
-/////---------------------- */
+.content-column, .strength-and-conditioning, .moto, .evolve {
+	color: #283A3E;
+}
 
 .section-break {
 	margin-top: 60px;
 	width: 100%;
-}
-
-.background-image {
-	position: relative;
-	overflow: hidden;
-}
-
-.background-overlay {
-	width: 100%;
-	height: 100%;
-}
-
-.background-overlay {
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.35);
-}
-
-.overlay-text {
-    max-width: 375px;
-    margin: 12px auto 0 auto;
-}
-
-/* /////---------------------
-
-	content-columns
-
-/////---------------------- */
-
-.content-wrapper {
-	margin: 0;
-	padding: 0;
-	background-color: #EFF2F3;
-}
-
-.content-column {
-	margin: 10px auto 0 auto;
-	background-color: #EFF2F3;
-	color: #555;
-}
-
-.outer-column {
-	margin: 25px auto;
-	max-width: 500px;
-	padding: 25px;
 	background-color: white;
 }
 
-.column-header {
-	margin: 0 auto;
-	text-align: center;
-}
-
-.header-underline {
-	border: 0;
-	height: 2px;
-	background-color: #39CD28;
-}
-
-.inner-column {
-	font-size: 16px;
-	line-height: 24px;
-}
-
-
-/*
-
-.content-column-header, .content-column-paragraph, .top-header {
-	width: 100%;
-}
-
-.content-column-header, .top-header {
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
-}
-
-
-.anchor-space-placeholder {
-	height: 60px;
-	background-color: #EFF2F3;
-}
-
-.top-header {
+.section-header {
  	height: 35px;
- 	margin: 0px auto 0 auto;
  	padding-bottom: 2px;
-	font-size: 16px;
  	color: white;
-	background-color: #39CD28;
-} */
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin-top: 0px;
+ 	padding-top: 10px;
+ 	text-align: center;
+
+}
 
 /* /////---------------------
 
@@ -116,7 +49,6 @@ body {
 	position: fixed;
 	height: 60px;
 	width: 100%;
-	background-color: #39CD28;
 	z-index: 1;
 }
 
@@ -135,7 +67,7 @@ body {
 	margin: -60px auto 0 auto;
 }
 
-.sliding-logo-text {
+.slidedown-logo-text {
 	height: 70%;
 	width: 100%;
 	margin-top: 0;
@@ -151,10 +83,10 @@ body {
 .website-navigation {
 	position: absolute;
 	display: none;
-	width: 320px;
+	width: 100%;
 	top: 60px;
 	left: 0;
-	background-color: #7BFF6C;
+	background-color: #283A3E;
 	z-index: 999;
 }
 
@@ -168,10 +100,6 @@ body {
 	list-style: none;
 	color: #182B16;
 	text-align: center;
-}
-
-.nav-button:hover {
-	background-color: #39CD28;
 }
 
 .nav-button a {
@@ -189,9 +117,88 @@ body {
 
 /* /////---------------------
 
-	Home page
+	Background-images
 
 /////---------------------- */
+
+.background-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.background-overlay {
+	width: 100%;
+	height: 100%;
+}
+
+.background-overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.overlay-text {
+    max-width: 375px;
+    margin: 10% auto 0 5%;
+}
+
+/* /////---------------------
+
+	content-columns
+
+/////---------------------- */
+
+.action-panel {
+	width: 100%;
+	height: 200px;
+	background-color: white;
+}
+
+.column-header, .top-header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content-wrapper {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+.content-column {
+	margin: 10px auto 0 auto;
+	background-color: white;
+}
+
+.outer-column {
+	margin: 10px auto;
+	max-width: 650px;
+	padding: 25px;
+	background-color: white;
+}
+.column-header {
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+.header-underline {
+	border: 0;
+	height: 2px;
+}
+
+.inner-column {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+/* /////---------------------
+
+	Homepage
+
+/////---------------------- */
+
+.row.home {
+	margin-top: 60px;
+}
 
 
 .caliber, .strength-and-conditioning, .moto {
@@ -208,7 +215,6 @@ body {
 	text-transform: uppercase;
 	color: white;
 	letter-spacing: .2em;
-	background-color: #39CD28;
 }
 
 .strength-and-conditioning {
@@ -217,7 +223,6 @@ body {
 	margin: 10px auto 0 auto;
 	padding-top: 4px;
 	font-size: 16px;
-	color: #555;
 	background-color: white;
 }
 
@@ -225,89 +230,64 @@ body {
 	height: 30px;
 	width: 275px;
 	margin: 10px auto 0 auto;
+	padding-top: 4px;
 	font-size: 15px; 
-	color: white;
+	background-color: white;
 }
 
-.homepage.content-columns-container {
-	background-color: #EFF2F3;
-}
+/* /////---------------------
 
-.homepage.content-column {
-	background-color: white; 
-}
+	Training Packages
 
-/* --- Start of Training Packages Page --- */
-
-.training-packages {
- 	margin-top: 0px;
- 	padding-top: 10px;
-}
-
-.packages.background-image {
-	background-image: url(http://i57.tinypic.com/ivvo21.jpg); /* or http://i59.tinypic.com/6i8aqu.jpg ?*/
-	background-size: cover;
-	background-position-x: -200px;
-}
-
-.packages.background-text-overlay {
-	margin: 10px auto 0 auto;
-}
+/////---------------------- */
 
 .evolve {
-	height: 100px;
-	width: 275px;
-	margin: 50px auto 0 auto;
-	letter-spacing: 0.2em;
-	text-align: center;
-	font-size: 24px;
-	line-height: 36px; /* 1.5x */
-	color: white;
+ 	max-width: 405px;
+    margin: 25px auto 0 auto;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 26px;
+    line-height: 36px;
 }
 
-.packages.offered-services {
-	color: #555;
+.offered-services {
 	font-size: 16px;
 	line-height: 28px;
 }
 
-.packages.content-columns-container {
-	background-color: #EFF2F3
+/* /////---------------------
+
+	Meet the Trainer
+
+/////---------------------- */
+
+.bio.background-image {
+	max-height: 400px;
 }
 
-.packages.content-column {
+.education.inner-column {
+	text-align: center;
+}
+
+.qualifications.content-column {
+	margin-top: -20px;
+}
+
+.vision.action-panel {
+	margin-top: 45px;
+	height: 340px;
+}
+.vision.content-column, .vision.outer-column, .vision.inner-column {
+	background-color: #28CBDC;
+}
+.vision.inner-column {
+	font-size: 16px;
+}
+.vision.header-underline {
 	background-color: white;
 }
 
-/* --- Start of Meet the Trainer Page --- */
-
-.meet-the-trainer {
-	margin: 0px auto;
- 	padding-top: 10px;
-}
-
-.about.top-section-wrapper, .about.bottom-section-wrapper, .qualifications-panel-wrapper {
- 	width: 100%;
- 	margin: 0 auto;
- 	overflow: hidden;
- 	background-color: #EFF2F3;
-}
-
-.qualifications-panel-wrapper {
- 	background-color: white;
-}
-
-/* Bio Content */
-
-.bio.background-image {
-	height: 400px;
-	width: 95%;
-	margin: 10px auto;
-	background-image: url(http://i.imgur.com/pA1O4lE.jpg?1);
-	background-size: cover;
-	background-position-x: 40%;
-	overflow: hidden;
-}
+/*
 
 .bio.background-image-overlay {
 	margin: 355px auto 0 auto;
@@ -321,124 +301,40 @@ body {
 	letter-spacing: 0.1em;
 	color: white;
 	text-align: center;
-}
+}*/
 
-/* Certification/Education Panels */
-
-.certifications-header, .education-header {
-	width: 100%;
-	margin: 0 auto;
-	padding-bottom: 2%;
-	font-size: 18px;
-	text-align: center;
-}
-
-.certifications-column, .education-column {
-	height: 180px;
-	width: 85%;
-	margin: 10px auto;
-	padding: 5%;
-	font-size: 16px;
-	line-height: 24px;
-	color: #555;
-	background-color: white;
-}
-
-.education-column {
-	text-align: center;
-}
-
-.certification-list, .education-list {
-	margin: 0 auto;
-}
-
-/* About Me + Vision Panels */
-
-.about-me-column, .vision-column {
-	width: 85%;
-	margin: 10px auto;
-	padding: 5%;
-	font-size: 16px;
-	background-color: white;
-}
-
-.about-me-header, .my-vision-header {
-	height: 30px;
-	width: 100%;
-	margin: 2px auto 0 auto;
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: 0.2em;
-	text-align: center;
-	text-transform: uppercase;
-	color: #555;
-}
-
-.vision-paragraph, .about-me-paragraph {
-	width: 90%;
-	margin: 0 auto;
-	padding: 5%;
-	font-size: 16px;
-	line-height: 24px;
-	color: #555;
-}
 
 /* --- Media Queries (over 350px) --- */
 
 
-					@media (min-width: 768px) {
+@media (min-width: 410px) {
 
-						.homepage.background-image, .packages.background-image {
-							height: 550px; /* moved up 25px */
-						}
+	.evolve {
+		margin-top: 45px;
+	}
+}
 
-						.caliber { 
-							height: 100px;
-						    width: 315px;
-						    padding-top: 20px;
-						    font-size: 45px;
-						}
+@media (min-width: 768px) {
 
-						.packages.background-image {
-							background-position-x: -100px;
-						}
+	.homepage.background-image, .packages.background-image {
+		height: 550px; /* moved up 25px */
+	}
 
-						.evolve {
-							width: 320px; /* Moved up 15px */
-							font-size: 30px; /* Moved up 2px */
-							line-height: 42px; /* 1.4x */
-						}
+	.caliber { 
+		height: 100px;
+	    width: 315px;
+	    padding-top: 20px;
+	    font-size: 45px;
+	}
+}  /* End of @media (min-width: 750px) */
 
 
 
-						.inner-column {
-							  
-						}
-
-						.about.bottom-section-wrapper, .about.top-section-wrapper {
-							height: 850px;
-						}
-
-						.about-me-column, .bio.background-image {
-						 	height: 330px;
-						}
-
-						.bio.background-image-overlay {
-						 	margin: 310px auto 0 auto;
-						}
-
-						.vision-column, .qualifications-panel-wrapper {
-							height: 400px;
-						}
-
-						.certifications-column, .education-column {
-						 	height: 160px;
-						}
-					}  /* End of @media (min-width: 750px) */
-
-
-
-
+@media (min-width: 992px) {
+	.bio.background-image {
+		max-height: 560px;
+	}
+}
 
 
 
