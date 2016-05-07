@@ -4,24 +4,24 @@ $(document).ready(function (){
 
 // Toggle sliding website-menu (when dropdown mwnu button is clicked)
 	$('.dropdown-hamburger').click( function() {
-		$('.sliding-website-navigation').animate({height: 'toggle'}, 250, function () {
+		$('.website-navigation').animate({height: 'toggle'}, 250, function () {
     	});
 	});
 
 //Toggle sliding website-menu (when Nav-list item button is clicked)
-	$('.dropdown-hamburger').click( function() {
+	$('.nav-button').click( function() {
 		$('.website-navigation').animate({height: 'toggle'}, 250, function () {
     	});
 	});
 
 // Toggle Fixed menu bar Caliber S&C name (depending on scroll)
-	var logo = $('.sliding-logo-text')
+	var logo = $('.slidedown-logo-text')
 
 	function logoSlider () {
 		if (document.body.scrollTop > 325) //Show slider after scrolling 325px
-			logo.stop().animate({'margin-top': '0px'}, 25);
+			logo.stop().animate({'margin-top': '60px'}, 25);
 		else
-			logo.stop().animate({'margin-top': '-60px'}, 25);
+			logo.stop().animate({'margin-top': '0px'}, 25);
 	};
 
 	$(window).scroll(function() {
