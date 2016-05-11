@@ -56,6 +56,7 @@ body {
 	height: 50px;
 	width: 50px;
 	float: left;
+	margin-left: 10px;
 	margin-top: 5px;
 	background-image: url(http://stepupdate.com/assets/svg/icon-hamburger.svg);
 	background-size: cover;
@@ -98,8 +99,16 @@ body {
 .nav-button {
 	margin: 0;
 	list-style: none;
-	color: #182B16;
+	color: white;
 	text-align: center;
+}
+
+.nav-button:first-child {
+	border-top: 1px solid #283A3E;
+}
+
+.nav-button:last-child {
+	border-bottom: 1px solid #283A3E;
 }
 
 .nav-button a {
@@ -107,7 +116,7 @@ body {
 	font-size: 16px;
 	padding: 12px;
 	text-decoration: none;
-	color: #182B16;
+	color: white;
 }
 
 .nav-button:hover a {
@@ -146,11 +155,10 @@ body {
 
 .action-panel {
 	width: 100%;
-	height: 200px;
-	background-color: white;
 }
 
 .column-header, .top-header {
+	font-family: sans-serif;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -173,8 +181,7 @@ body {
 	background-color: white;
 }
 .column-header {
-	font-size: 26px;
-	letter-spacing: 1px;
+	font-size: 32px;
 }
 
 .header-underline {
@@ -200,7 +207,6 @@ body {
 
 .caliber, .strength-and-conditioning, .moto {
 	text-align: center;
-	letter-spacing: 0.1em
 }
 
 .caliber {
@@ -215,15 +221,16 @@ body {
 }
 
 .strength-and-conditioning {
-	height: 30px;
-	width: 275px;
+	height: 35px;
+	width: 295px;
 	margin: 10px auto 0 auto;
-	padding-top: 4px;
-	font-size: 16px;
+	padding: 3px;
+	font-size: 20px;
 	background-color: white;
 }
 
 .moto {
+	font-family: sans-serif;
 	height: 30px;
 	width: 275px;
 	margin: 10px auto 0 auto;
@@ -239,12 +246,13 @@ body {
 /////---------------------- */
 
 .evolve {
- 	max-width: 405px;
+	font-family: sans-serif;
+	padding: 25px;
+ 	max-width: 745px;
     margin: 25px auto 0 auto;
-    letter-spacing: 0.1em;
     text-align: center;
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 48px;
 }
 
 .offered-services {
@@ -262,6 +270,19 @@ body {
 	max-height: 400px;
 }
 
+.bio.background-overlay {
+	background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+    bottom: 0px;
+}
+
+#bio-name {
+	text-align: center;
+    color: #FFF;
+    margin-top: 6px;
+    font-size: 16px;
+}
+
 .education.inner-column {
 	text-align: center;
 }
@@ -270,19 +291,6 @@ body {
 	margin-top: -20px;
 }
 
-.vision.action-panel {
-	margin-top: 45px;
-	height: 340px;
-}
-.vision.content-column, .vision.outer-column, .vision.inner-column {
-	background-color: #28CBDC;
-}
-.vision.inner-column {
-	font-size: 16px;
-}
-.vision.header-underline {
-	background-color: white;
-}
 
 /*
 
@@ -307,7 +315,8 @@ body {
 @media (min-width: 410px) {
 
 	.evolve {
-		margin-top: 45px;
+		margin: 45px auto;
+
 	}
 }
 
