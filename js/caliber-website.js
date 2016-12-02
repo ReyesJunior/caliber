@@ -2,18 +2,6 @@
 
 $(document).ready(function (){
 
-// Toggle sliding website-menu (when dropdown mwnu button is clicked)
-	$('.dropdown-hamburger').click( function() {
-		$('.website-navigation').animate({height: 'toggle'}, 250, function () {
-    	});
-	});
-
-//Toggle sliding website-menu (when Nav-list item button is clicked)
-	$('.nav-button').click( function() {
-		$('.website-navigation').animate({height: 'toggle'}, 250, function () {
-    	});
-	});
-
 // Toggle Fixed menu bar Caliber S&C name (depending on scroll)
 	var logo = $('.slidedown-logo-text')
 
