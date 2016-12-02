@@ -20,25 +20,47 @@ body {
 /////---------------------- */
 
 .section-wrapper {}
+.section-stripe {
+	background: #f8f8f8;
+	padding: 25px;
+}
+.section-identifier {
+	margin: 0;
+}
 .section-jumbotron {
 	margin-bottom: 0;
 }
+.section-jumbotron h1 {
+	text-transform: uppercase;
+}
 .section-description-panel {
+	padding: 35px 15px;
 	text-align: center;
 	background: #e6e6e6;
 }
-.section-header {}
-.section-body {}
+.section-body {
+	margin-bottom: 25px;
+	line-height: 22px;
+}
 .section-list {
 	margin:  0;
 	padding: 0;
 	list-style: none;
 }
-.list-content-wrapper {}
+.list-content-wrapper {
+	margin:  25px auto;
+}
 .list-icon-wrapper {}
-.list-icon {}
-.list-content-header {}
-.list-content-body {}
+.list-icon {
+	font-size: 24px;
+}
+.list-content-header {
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.list-content-body {
+	line-height: 22px;
+}
 
 /* /////---------------------
 
@@ -66,20 +88,6 @@ section.about {
 
 /////---------------------- */
 
-.evolve {
-	font-family: sans-serif;
-	padding: 25px;
- 	max-width: 745px;
-    margin: 25px auto 0 auto;
-    text-align: center;
-    font-size: 36px;
-    line-height: 48px;
-}
-
-.offered-services {
-	font-size: 16px;
-	line-height: 28px;
-}
 
 /* /////---------------------
 
@@ -87,82 +95,25 @@ section.about {
 
 /////---------------------- */
 
-.bio.background-image {
-	max-height: 400px;
-}
 
-.bio.background-overlay {
-	background-color: rgba(0, 0, 0, 0.9);
-    height: 40px;
-    bottom: 0px;
-}
+/* /////---------------------
 
-#bio-name {
-	text-align: center;
-    color: #FFF;
-    margin-top: 6px;
-    font-size: 16px;
-}
+	Contact Page
 
-.education.inner-column {
-	text-align: center;
-}
-
-.qualifications.content-column {
-	margin-top: -20px;
-}
+/////---------------------- */
 
 
-/*
 
-.bio.background-image-overlay {
-	margin: 355px auto 0 auto;
-	height: 45px;
-	background-color: rgba(0,0,0,0.90);	
-}
-
-.bio.trainer-name {
-	margin: 12px auto 0 auto;
-	font-size: 16px;
-	letter-spacing: 0.1em;
-	color: white;
-	text-align: center;
-}*/
-
-
-/* --- Media Queries (over 350px) --- */
+/* ----------------------------------------------------- Media Queries (over 350px) ----------------------------------------------------- */
 
 
 @media (min-width: 410px) {
 
-	.evolve {
-		margin: 45px auto;
-
+	.section-description-panel {
+		padding: 65px 45px;
 	}
+
 }
-
-@media (min-width: 768px) {
-
-	.homepage.background-image, .packages.background-image {
-		height: 550px; /* moved up 25px */
-	}
-
-	.caliber { 
-		height: 100px;
-	    width: 315px;
-	    padding-top: 20px;
-	    font-size: 45px;
-	}
-}  /* End of @media (min-width: 750px) */
-
-
-
-@media (min-width: 992px) {
-	.bio.background-image {
-		max-height: 560px;
-	}
-}
-
 
 
 
