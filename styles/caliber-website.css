@@ -13,7 +13,7 @@ body {
 	padding: 0;
 }
 
-.section-header, .sticky-header, .nav-button:hover, .header-underline, .caliber {
+.section-header, .nav-button:hover, .header-underline, .caliber {
 	background-color: #28cbdc;
 }
 
@@ -41,88 +41,14 @@ body {
 
 /* /////---------------------
 
-	Sticky Header 
+	Navbar
 
 /////---------------------- */
 
-.sticky-header {
-	position: fixed;
-	height: 60px;
-	width: 100%;
-	z-index: 1;
+.caliber-navbar {
+	margin: 0 15px 0;
 }
 
-.dropdown-hamburger {
-	height: 50px;
-	width: 50px;
-	float: left;
-	margin-left: 10px;
-	margin-top: 5px;
-	background-image: url(http://stepupdate.com/assets/svg/icon-hamburger.svg);
-	background-size: cover;
-}
-
-.slidedown-logo {
-	height: 100%;
-	width: 70%;
-	margin: -60px auto 0 auto;
-}
-
-.slidedown-logo-text {
-	height: 70%;
-	width: 100%;
-	margin-top: 0;
-	font-size: 24px;
-	text-align: center;
-	text-transform: uppercase;
-	padding-top: 15px;
-	padding-left: 15px;
-	letter-spacing: 2px;
-	color: white;
-}
-
-.website-navigation {
-	position: absolute;
-	display: none;
-	width: 100%;
-	top: 60px;
-	left: 0;
-	background-color: #1c909c;
-	z-index: 999;
-}
-
-.website-navigation ul {
-	margin: 0;
-	padding: 0;
-}
-
-.nav-button {
-	margin: 0;
-	list-style: none;
-	color: white;
-	text-align: center;
-}
-
-.nav-button:first-child {
-	border-top: 1px solid #283A3E;
-}
-
-.nav-button:last-child {
-	border-bottom: 1px solid #283A3E;
-}
-
-.nav-button a {
-	display: block;
-	font-size: 16px;
-	padding: 12px;
-	text-decoration: none;
-	color: white;
-}
-
-.nav-button:hover a {
-	text-decoration: none;
-	color: white;
-}
 
 /* /////---------------------
 
@@ -200,8 +126,8 @@ body {
 
 /////---------------------- */
 
-.row.home {
-	margin-top: 60px;
+.about-section-wrapper {
+	margin-top: 50px;
 }
 
 
