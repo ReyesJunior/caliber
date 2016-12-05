@@ -131,6 +131,7 @@ section.about {
 .experience-panel {
 	background-color: #e6e6e6;
 	text-align: center;
+	padding-bottom: 35px;
 }
 .nested-experience-list {
 	margin: 0;
@@ -144,7 +145,19 @@ section.about {
 
 /////---------------------- */
 
-
+.contact-form-panel {
+	padding: 35px 15px;
+	text-align: center;
+	background: #e6e6e6;
+}
+.form-description {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.form-wrapper {
+	max-width: 600px;
+	margin: 25px auto;
+}
 
 /* ----------------------------------------------------- Media Queries (over 350px) ----------------------------------------------------- */
 
@@ -163,6 +176,12 @@ section.about {
 	.bio-image-wrapper {
 		margin: 35px auto;
 	}
+	.experience-panel {
+		padding-bottom: 45px;
+	}
+	.contact-form-panel {
+		padding: 65px 45px;
+	}
 
 }
 
@@ -171,6 +190,7 @@ section.about {
 	.bio-image-wrapper {
 		margin: 45px auto;
 	}
+
 }
 
 @media (min-width: 992px) {
@@ -192,6 +212,12 @@ section.about {
 	}
 	.bio-content-panel {
 		margin: 45px auto;
+	}
+	.experience-panel {
+		padding-bottom: 45px;
+	}
+	.contact-form-panel {
+		padding: 85px 45px;
 	}
 
 }
