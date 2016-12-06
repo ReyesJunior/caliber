@@ -109,6 +109,10 @@ a, p {
 .about-caliber-section {
 	margin-top: 50px;
 }
+.top-section-description-panel {}
+.bottom-section-description-panel {
+	background-color: #d6d6d6;
+}
 
 /* /////---------------------
 
@@ -127,13 +131,14 @@ a, p {
 	padding: 35px 15px;
 	background-color: #e6e6e6;
 }
+.bio-image-panel {}
 .bio-image-wrapper {
 	max-width: 300px;
 	height: 300px;
 	margin: 25px auto;
 	background-color: #333;
 }
-.experience-panel {
+.bio-experience-panel {
 	background-color: #e6e6e6;
 	text-align: center;
 	margin:  25px auto;
