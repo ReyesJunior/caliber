@@ -1,0 +1,227 @@
+/* /////---------------------
+
+	Global CSS 
+
+	(original color: #39CD28; new color: #28cbdc; #283A3E
+	(imgs: http://i.imgur.com/JZnfkvi.jpg?1)
+
+/////---------------------- */
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+a, p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.limit-width {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* /////---------------------
+
+	Section Styling
+
+/////---------------------- */
+
+.section-wrapper {}
+.section-stripe {
+	background: #f8f8f8;
+	padding: 25px;
+}
+.section-identifier {
+	margin: 0;
+	text-transform: uppercase;
+}
+.section-jumbotron {
+	margin-bottom: 0;
+	text-align: center;
+}
+.section-jumbotron h1 {
+	text-transform: uppercase;
+}
+.section-description-panel {
+	padding: 35px 15px;
+	text-align: center;
+	background: #e6e6e6;
+}
+.section-header {
+	margin-bottom: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.section-body {
+	margin-bottom: 25px;
+	line-height: 22px;
+}
+.section-list {
+	margin:  0;
+	padding: 0;
+	list-style: none;
+}
+.list-content-wrapper {
+	margin:  25px auto;
+}
+.list-icon-wrapper {}
+.list-icon {
+	font-size: 24px;
+}
+.list-content-header {
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.header-underscore {
+	border: 0;
+	background: #333;
+    height: 5px;
+    width: 25px;
+}
+.list-content-body {
+	line-height: 22px;
+}
+
+/* /////---------------------
+
+	Navbar
+
+/////---------------------- */
+
+.caliber-navbar {
+	margin: 0 15px 0;
+}
+.navbar-brand {
+	text-transform: uppercase;
+}
+
+/* /////---------------------
+
+	About Section
+
+/////---------------------- */
+
+.about-caliber-section {
+	margin-top: 50px;
+}
+.top-section-description-panel {}
+.bottom-section-description-panel {
+	background-color: #d6d6d6;
+}
+
+/* /////---------------------
+
+	Training Packages
+
+/////---------------------- */
+
+
+/* /////---------------------
+
+	Meet the Trainer
+
+/////---------------------- */
+
+.bio-panel {
+	padding: 35px 15px;
+	background-color: #e6e6e6;
+}
+.bio-image-panel {}
+.bio-image-wrapper {
+	max-width: 300px;
+	height: 300px;
+	margin: 25px auto;
+	background-color: #333;
+}
+.bio-experience-panel {
+	background-color: #e6e6e6;
+	text-align: center;
+	margin:  25px auto;
+}
+.bio-content {
+	margin-top: 25px;
+	text-align: center;
+}
+.bio-text {
+	/* text-align: left; */
+}
+.nested-experience-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* /////---------------------
+
+	Contact Page
+
+/////---------------------- */
+
+.contact-form-panel {
+	padding: 35px 15px;
+	text-align: center;
+	background: #e6e6e6;
+}
+.form-description {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.form-wrapper {
+	max-width: 600px;
+	margin: 50px auto 0;
+}
+
+/* ----------------------------------------------------- Media Queries (over 350px) ----------------------------------------------------- */
+
+
+@media (min-width: 400px) {
+
+	.section-jumbotron {
+		text-align: left;
+	}
+	.section-description-panel, .bio-panel, .contact-form-panel {
+		padding: 65px 45px;
+	}
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+
+	.section-body {
+		margin-bottom: 35px;
+	}
+	.section-body, .list-content-body {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.section-description-panel, .bio-panel, .contact-form-panel {
+		padding: 85px 45px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
